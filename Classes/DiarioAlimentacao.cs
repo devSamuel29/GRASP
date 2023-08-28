@@ -4,11 +4,10 @@ public static class DiarioAlimentacao
 {
     private static readonly List<RegistroAlimentacao> registros = new();
 
-    public static void RegistrarAlimentacao(Animal animal, Dieta dieta)
+    public static void RegistrarAlimentacao(Dieta dieta)
     {
         RegistroAlimentacao registro = new RegistroAlimentacao
         {
-            Animal = animal,
             Dieta = dieta,
             DataAlimentacao = DateTime.Now,
         };

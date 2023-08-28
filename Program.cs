@@ -10,5 +10,5 @@ Dieta dieta =
         Quantidade = 3
     };
 
-DiarioAlimentacao.RegistrarAlimentacao(animal, dieta);
+DiarioAlimentacao.RegistrarAlimentacao(dieta);
 DiarioAlimentacao.Mostrar();
