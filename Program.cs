@@ -1,14 +1,12 @@
 ﻿using GRASP.Classes;
 
-Animal animal = new() { Nome = "Leão", Idade = 3 };
-
 Dieta dieta =
     new()
     {
-        Animal = animal,
         TipoAlimento = "Carne",
         Quantidade = 3
     };
 
-DiarioAlimentacao.RegistrarAlimentacao(dieta);
-DiarioAlimentacao.Mostrar();
+Animal animal = new() { Nome = "Leão", Dieta = dieta };
+
+DiarioAlimentacao.RegistrarAlimentacao(animal);
